@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#999999</color>
+    <color name="gray_light">#CCCCCC</color>
+    <color name="gray_very_light">#e0e0e0</color>
+    <color name="gray_deep">#666666</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="activity_background">#EEEEEE</color>
+    <color name="background_color">#009688</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+    <color name="dialog_background_scrim">#99efeeee</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="indigo_primary">#3F51B5</color>
+    <color name="indigo_primary_dark">#303F9F</color>
+    <color name="blue_primary">#2196F3</color>
+    <color name="blue_primary_dark">#1976D2</color>
+    <color name="light_blue_primary">#03A9F4</color>
+    <color name="light_blue_primary_dark">#0288D1</color>
+    <color name="google_green">#34A853</color>
+    <color name="cyan_primary">#00BCD4</color>
+    <color name="cyan_primary_dark">#0097A7</color>
+    <color name="teal_primary">#009688</color>
+    <color name="description">#a9a9a9</color>
+    <color name="google_red">#EA4335</color>
+
+    <color name="black_25_transparent">#40000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="chrome_grey">#F2F2F2</color>
+</resources>
