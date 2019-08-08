@@ -116,9 +116,7 @@ public class SignActivity extends AppCompatActivity {
 //                            updateUI(null);
                         }
 
-                        // [START_EXCLUDE]
-//                        if (!task.isSuccessful()) {
-//                            mStatusTextView.setText(R.string.auth_failed);
+
 //                        }
                         hideProgress();
                         // [END_EXCLUDE]
@@ -127,12 +125,7 @@ public class SignActivity extends AppCompatActivity {
         // [END sign_in_with_email]
     }
 
-//    private void updateUI(FirebaseUser user) {
-//        DatabaseReference addUser = FirebaseDatabase.getInstance().getReference("users").child(user.getUid());
-//
-//        addUser.child("displayName").setValue(user.getDisplayName());
-//        addUser.child("photoUrl").setValue(user.getPhotoUrl());
-//    }
+
 
     private boolean validateForm() {
         boolean valid = true;

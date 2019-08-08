@@ -75,11 +75,6 @@ public class MainActivity extends AppCompatActivity {
                     setContentView(R.layout.activity_main);
                     initialize();
 
-//                    //initialize bottom tab
-//                    loadFragment(new HomeFragment());
-//                    BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-//                    navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
                 } else {
                     Log.d("MainActivity", "onAuthStateChanged: user  null" );
                     Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
@@ -131,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                         return true;
 //                        break;
                     case R.id.option_logout:
-
+                        mFirebaseAuth.signOut();
 
                         return true;
 //                        break;
@@ -187,7 +182,8 @@ public class MainActivity extends AppCompatActivity {
             protected void onBindViewHolder(final TravelViewHolder viewHolder, final int position, final TravelModel model) {
                 final String post_key = getRef(position).getKey();
 
-                viewHolder.mTravelSubtitle.setText(model.getDealPrice());
+                viewHolder.mTravelSubtitle.setText(model.getDealDescription());
+                viewHolder.mTravelPrice.setText(model.getDealPrice());
                 viewHolder.mTravelTitle.setText(model.getDealTitle());
                 viewHolder.setPropertyImage(MainActivity.this,  model.getImageUrl());
                 viewHolder.mView.setOnClickListener(new View.OnClickListener() {
